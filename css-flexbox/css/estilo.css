@@ -1,0 +1,85 @@
+/* variaveis*/
+:root{
+    --mainColor: #9CADB3;
+    --sencondaryColor: #CFDADA;
+    --bgColor: #EBF2F2;
+    --highlightColor: #BBD5D8; 
+}
+
+/*reset*/
+html, body{
+    margin: 0;
+    padding: 0;  
+}
+
+/*fontes*/
+@font-face{
+    font-family: 'titleFont';
+    src: url('../fonts/Roboto-Medium.ttf')
+}
+
+@font-face{
+    font-family: 'bodyFont';
+    src: url('../fonts/Roboto-Regular.ttf')
+}
+
+/*estilos basicos*/
+*{
+    font-family: bodyFont;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: titleFont;
+    background-color: var(--mainColor);
+    padding: 10px;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#mainSection{
+    padding: 20px;
+}
+
+p{
+    font-size: 1em;
+}
+
+h1{
+    font-size: 1.8em;
+}
+
+/*mobile*/
+*{
+    font-size: 20px;
+}
+
+
+/*tablets pequenos*/
+
+/*telas grandes e notebook*/
+@media(min-width: 960px){
+    *{
+        font-size: 15px;
+    }
+    
+    #mainSection{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: calc(100% - 40px);
+    }
+    
+    #mainSection article{
+        width: 300px;
+        
+    }
+}
+
+/*desktop*/
+
+
+
+
+

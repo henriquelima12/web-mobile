@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/adicionar.css">
+	<script type="text/javascript" src="js/api.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Adicionar Produto</title>
+</head>
+<body>
+
+	<div>
+	   <header>
+		    <a href='estoque.html'>Voltar</a>
+		    <p>Cadastrar Produto</p>
+  		</header>
+	  
+	  <main>
+	    <form>
+	      <input type="text" name="" id="formCodigo" placeholder="Código do produto" required>
+	      <input type="text" name="" id="formNome" placeholder="Nome do Produto" required>
+	      <input type="text" name="" id="formMarca" placeholder="Marca" required>
+	      <input type="text" name="" id="formTamanho" placeholder="Tamanho" required>
+	      <input type="text" name="" id="formCor" placeholder="Cor" required>
+	      <input type="text" name="" id="formPrecoCusto" placeholder="Preço de Custo" required>
+	      <input type="text" name="" id="formPrecoVenda" placeholder="Preço de Venda" required>
+	      <input type="text" name="" id="formQuantidadeItens" placeholder="Quantidade de Itens" required>
+	      
+	    </form>
+	    
+	    <section>
+	      <input type="button" onclick="redirect()" name="Cancelar" class="button" value="Cancelar">
+	      <input type="button" name="Ok" class="button" value="Ok" onclick="adiconarProduto()">
+	    </section>
+	  </main>
+	  
+	  <nav>
+	    <ul>
+	      <li><a href='index.html'>Painel</a></li>
+	      <li><a href='estoque.html'>Estoque</a></li>
+	      <li><a href='usuarios.html'>Usuários</a></li>
+	    </ul>
+	  </nav>
+
+	</div>
+
+</body>
+</html>

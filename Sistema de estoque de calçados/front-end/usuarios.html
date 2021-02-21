@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/dados.css">
+  <script type="text/javascript" src="js/api-user.js"></script>
+  <script type="text/javascript" src="js/main-user.js"></script>
+
+<title>Estoque</title>
+</head>
+<body onload="mostrarUsuarios()">
+	<div>
+  <header>
+    <section>
+      <a href = "index.html">Voltar</a>
+      <a href = "novousuario.html">Adicionar usuário</a>
+    </section>
+    <p class="title">Usuários</p>
+  </header>
+  
+  <main>
+    <article id="usuarios">
+        
+    </article>
+    
+      <form name="formul">
+        <p>Formulário de Edição</p>
+
+        <label for="nome">Nome do Usuário</label>
+        <input type="text" name="nome" id="formNomeUp" placeholder="Nome do Usuário" required>
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" id="formCpfUp" placeholder="Não Editável" disabled>
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargo" id="formCargoUp" placeholder="Cargo" required>
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="formTelefoneUp" placeholder="Telefone" required>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="formEmailUp" placeholder="Email" required>
+
+        <section id='buttons'>
+        <button name="cancelar">Cancelar</button>
+        <button name="editar" onclick="atualizarUsuario()">Atualizar</button>
+        </section>
+
+      </form>
+      
+  </main>
+
+  
+  <nav>
+    <ul>
+      <li><a href='index.html'>Painel</a></li>
+      <li><a href='estoque.html'>Estoque</a></li>
+      <li><a href='usuarios.html'>Usuários</a></li>
+    </ul>
+    
+  </nav>
+</div>
+
+</body>
+</html>

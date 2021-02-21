@@ -1,0 +1,86 @@
+:root{
+    --backgroundColor: #f0f0f0;
+    --cardColor: #fff;
+}
+
+html, body{
+    height: 100%;
+    background-color: #f0f0f0;
+    font-family: monospace;
+}
+
+body{
+    padding: 20px;
+    background-color: var(--backgroundColor);
+}
+
+#content{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 20px;
+}
+
+#content article{
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    max-width: 20%;
+    box-shadow: 0 0 10px 
+    height: 510px;
+    width: 300px;
+}
+
+#content article img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+#content article h1{
+    text-align: center;
+}
+
+#content article p{
+    padding: 0 10px;
+    width: calc(100% - 20px);
+}
+
+h2{
+    text-align: center;
+}
+.formCreate{
+    margin-bottom: 30px;
+}
+form h2{
+    text-align: left;
+}
+
+.formUpdate{
+    display: flex;
+    flex-direction: column;
+}
+.formUpdate input{
+    width: 150pt;
+    margin-bottom: 15pt;
+    margin-top: 10pt;
+}
+.formUpdate button{
+    margin-top: 15pt;
+    width: 60pt;
+    margin-bottom: 15pt;
+}
+.sec-button{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 650px){
+    .sec-button{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

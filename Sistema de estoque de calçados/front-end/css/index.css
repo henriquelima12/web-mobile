@@ -1,0 +1,65 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  font-family: "Montserrat Light";
+}
+div{
+  display: grid;
+  grid-template-rows: 12vh 82vh 6vh;
+  grid-template-areas: "header"
+                       "main"
+                       "nav"
+}
+header{
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgb(201, 107, 44, 85%);
+}
+header p{
+  color: #fff;
+  font-size: 12pt;
+}
+main{
+  grid-area: main;
+}
+main ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 0;
+
+}
+main ul li{
+  list-style-type: none;
+  border-bottom: 1px solid rgb(60, 60, 67, 29%);
+  padding: 10px;
+  font-size: 9pt;
+}
+main ul li a{
+  text-decoration: none;
+  color: #000;
+}
+nav{
+  display: fixed;
+  background-color: rgb(220, 220, 220);
+  grid-area: nav;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li{
+  list-style-type: none;
+  font-size: 7pt;
+  color: #4d4d4d;
+  align-items: center;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #4d4d4d;
+}

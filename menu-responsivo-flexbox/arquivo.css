@@ -1,0 +1,84 @@
+:root{
+	--textColor : #fff;
+	--mainColor : #233140;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+@font-face{
+	font-family: 'mainFont';
+	src: url('Roboto-Regular.ttf');
+}
+
+*{
+	font-family: 'mainFont';
+}
+
+nav ul li{
+	cursor: pointer;
+}
+
+nav{
+	background-color: var(--mainColor);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav ul li{
+	color: var(--textColor);
+	list-style-type: none;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin-bottom: 10px;
+	font-size: 10pt;
+}
+
+nav ul li img{
+	width: 60%;
+}
+
+@media( min-width: 620px){
+
+}
+
+@media( min-width: 960px){
+	body{
+		
+	}
+
+	nav{
+		top: 0;
+		height: 40px;		
+
+	}
+
+	nav ul{
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 40px;
+	}
+
+	nav ul li img{
+		display: none;
+	}
+
+	nav ul li{
+		margin: 10px;
+		font-size: 12pt;
+	}
+
+}

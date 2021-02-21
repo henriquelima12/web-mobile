@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/adicionar.css">
+	<script type="text/javascript" src="js/api-user.js"></script>
+	<script type="text/javascript" src="js/main-user.js"></script>
+	<title>Adicionar Usuário</title>
+</head>
+<body>
+
+	<div>
+	  <header>  
+	    <a href='usuarios.html'>Voltar</a>
+		<p>Cadastrar Usuário</p>
+	  </header>
+	  
+	  <main>
+	    <form>
+	      <input type="text" name="" id="formNome" placeholder="Nome do Usuário" required>
+	      <input type="text" name="" id="formCpf" placeholder="CPF" required>
+	      <input type="text" name="" id="formCargo" placeholder="Cargo" required>
+	      <input type="text" name="" id="formTelefone"  placeholder="Telefone" required>
+	      <input type="text" name="" id="formEmail" placeholder="Email" required> 
+	    </form>
+	    
+	    <section>
+	      <input type="button" onclick="redirect()" name="Cancelar" class="button" value="Cancelar">
+	      <input type="button" name="Ok" class="button" value="Ok" onclick="adiconarUsuario()">
+	    </section>
+	  </main>
+	  
+	  <nav>
+	    <ul>
+	      <li><a href='index.html'>Painel</a></li>
+	      <li><a href='estoque.html'>Estoque</a></li>
+	      <li><a href='usuarios.html'>Usuários</a></li>
+	    </ul>
+	  </nav>
+
+	</div>
+
+</body>
+</html>

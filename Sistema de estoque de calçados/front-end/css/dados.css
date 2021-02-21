@@ -1,0 +1,182 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  font-family: "Montserrat";
+}
+div{
+  display: grid;
+  grid-template-rows: 18vh auto 6vh;
+  grid-template-areas: "header"
+                       "main"
+                       "nav"
+}
+header{
+  background-color: rgb(201, 107, 44, 85%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: header;
+}
+header section a{
+  font-size: 11pt;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0;
+}
+.title{
+  color: #fff;
+  font-size: 26pt;
+  margin-bottom: 18pt;
+  margin-left: 1%;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+main{
+  grid-area: main;
+}
+article{
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 20pt;
+}
+article{
+  color: #000;
+  margin-left: 2pt;
+}
+article div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10pt;
+  background-color: rgb(227, 227, 227, 40%);
+  font-size: 9pt;
+}
+article div p{
+  margin-left: 1%;
+}
+strong{
+  font-size: 13pt;
+  margin-top: 6pt;
+  margin-bottom: 8pt;
+  margin-left: 1%;
+}
+button{
+  width: 15%;
+  height: 16pt;
+  margin-left: 1%;
+}
+.edit{
+  background-color: #797979;
+  color: #fff;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 20pt;
+  margin-bottom: 10pt;
+}
+.delete{
+  background-color: #ff4040;
+  color: #fff;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+form{
+  margin-bottom: 20pt;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+}
+form p{
+  text-align: center;
+  margin-bottom: 20pt;
+  font-size: 15pt;
+}
+input{
+  margin-bottom: 12pt;
+  width: 99%;
+  border-radius: 30px;
+  outline: 0;
+  border: none;  
+}
+::-webkit-input-placeholder{
+  color: rgb(60, 60, 67, 62%); 
+}
+input[name='cpf']{
+  background-color: #fff;
+}
+input[name='codigo']{
+  background-color: #fff;
+}
+#buttons{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin-bottom: 20pt;
+}
+button[name='editar']{
+  background-color: #c56b30;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+  height: 25pt;
+}
+button[name='cancelar']{
+  background-color: #797979;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+  height: 25pt;
+}
+
+nav{
+  background-color: rgb(220, 220, 220);
+  position: fixed;
+  grid-area: nav;
+  bottom: 0;
+  width: 100%;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li{
+  list-style-type: none;
+  font-size: 7pt;
+}
+nav ul li a{
+  color: #4d4d4d;
+}
+section{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+section a{
+  font-size: 10pt;
+}
+
+@media (max-width: 460px){
+  button[name='editar']{
+    height: 20pt;
+    width: 60pt;
+  }
+  button[name='cancelar']{
+    height: 20pt;
+    width: 60pt;
+  }
+  .edit{
+    width: 50pt;
+  }
+  .delete{
+  width: 50pt;
+  }
+
+
+
+
+

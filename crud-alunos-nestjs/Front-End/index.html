@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onload="mostrarAlunos()">
+    <form name="create" class="formCreate">
+        <h2>Adicionar Aluno</h2>
+    	<p>
+    		Nome<br>
+            <input type="text" id="nome" value="" />
+    	</p>
+    	<p>
+    		TIA<br>
+            <input type="text" id="tia" value=""  />
+    	</p>
+    	<p>
+    		Curso<br>
+            <input type="text" id="curso" value="" />
+    	</p>
+    	<p>
+    		Foto<br>
+            <input type="text" id="foto" value=""  />
+    	</p>
+    	<button onclick="adiconarAluno()" id="botao">Cadastrar</button>
+    </form>
+
+    <hr>
+
+    <h2>Lista de Alunos</h2>
+
+    <section id="content">
+    
+    </section>
+
+    <hr>
+
+    <form name="update" class="formUpdate">
+        <h2>Formulário de Edição</h2>
+        <input type="text" id="nomeUp" value="" placeholder="Nome" />
+        <input type="text" id="tiaUp" value=""  placeholder="TIA" disabled />
+        <input type="text" id="cursoUp" value="" placeholder="Curso"/>
+        <input type="text" id="fotoUp" value="" placeholder="Foto"/>
+        
+        <button onclick="atualizarAluno()" id="botao">Atualizar</button>
+    </form>
+
+</body>
+
+</html>

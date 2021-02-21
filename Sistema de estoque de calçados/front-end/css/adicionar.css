@@ -1,0 +1,111 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  font-family: "Montserrat Light";
+}
+div{
+  display: grid;
+  grid-template-rows: 18vh 76vh 6vh;
+  grid-template-areas: "header"
+                       "main"
+                       "nav"
+}
+
+header{
+  background-color: rgb(201, 107, 44, 85%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-area: header;
+}
+header p{
+  color: #fff;
+  font-size: 26pt;
+  margin-bottom: 10pt;
+  margin-left: 1%;
+}
+header a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 11pt;
+  margin-left: 1.35%;
+  padding-top: 0.4%;
+}
+main{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  grid-area: main;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  margin-bottom: 35pt;
+  margin-right: 14pt;
+}
+
+input[type="text"]{
+  width: 99%;
+  outline: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: thin;
+  border-bottom-color: rgb(60, 60, 67, 29%);
+  margin-left: 1%;
+  margin-top: 20pt;
+}
+::-webkit-input-placeholder{
+  color: rgb(60, 60, 67, 62%); 
+}
+section{
+  height: 25pt;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40pt;
+}
+.button{
+  width: 25%;
+  margin-left: 42pt;
+  margin-right: 42pt;
+}
+input[value="Cancelar"]{
+  background-color: #9d9d9d;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+input[value="Ok"]{
+  background-color: #c56b30;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+nav{
+  display: fixed;
+  background-color: rgb(220, 220, 220);
+  grid-area: nav;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li{
+  list-style-type: none;
+  font-size: 7pt;
+  color: #4d4d4d;
+}
+nav ul li a{
+  color: #4d4d4d;
+  text-decoration: none;
+}

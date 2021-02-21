@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/dados.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="js/api.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+<title>Estoque</title>
+</head>
+<body onload="mostrarProdutos()">
+	<div>
+  <header>
+    <section>
+      <a href = "index.html">Voltar</a>
+      <a href = "novoproduto.html">Adicionar produto</a>
+    </section>
+    <p class="title">Estoque</p>
+  </header>
+  
+  <main>
+    <article id="produtos">
+        
+    </article>
+
+      <form name="formul">
+        <p>Formulário de Edição</p>
+
+        <label for="codigo">Código do Produto</label>
+        <input type="text" name="codigo" id="formCodigoUp" placeholder="Não Editável" disabled>
+        <label for="nome">Nome do Produto</label>
+        <input type="text" name="nome" id="formNomeUp" placeholder="Nome do Produto" required>
+        <label for="marca">Marca</label>
+        <input type="text" name="marca" id="formMarcaUp" placeholder="Marca" required>
+        <label for="tamanho">Tamanho</label>
+        <input type="text" name="tamanho" id="formTamanhoUp" placeholder="Tamanho" required>
+        <label for="cor">Cor</label>
+        <input type="text" name="cor" id="formCorUp" placeholder="Cor" required>
+        <label for="pcusto">Preço de Custo</label>
+        <input type="text" name="pcusto" id="formPrecoCustoUp" placeholder="Preço de Custo" required>
+        <label for="pvenda">Preço de Venda</label>
+        <input type="text" name="pvenda" id="formPrecoVendaUp" placeholder="Preço de Venda" required>
+        <label for="qtd">Quantidade de Itens</label>
+        <input type="text" name="qtd" id="formQuantidadeItensUp" placeholder="Quantidade de Itens" required>
+
+        <section id='buttons'>
+        <button name="cancelar">Cancelar</button>
+        <button name="editar" onclick="atualizarProduto()">Atualizar</button>
+        </section>
+
+      </form>
+      
+  </main>
+
+  
+  <nav>
+    <ul>
+      <li><a href='index.html'>Painel</a></li>
+      <li><a href='estoque.html'>Estoque</a></li>
+      <li><a href='usuarios.html'>Usuários</a></li>
+    </ul>
+    
+  </nav>
+</div>
+
+</body>
+</html>
